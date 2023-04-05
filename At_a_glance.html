@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<head>
+    <style>
+      .teaser-block .teaser-list {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+.teaser-block .teaser-item {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  flex: 1 1 auto;
+  margin: 0 1% 1.25rem;
+  max-width: 48%;
+  padding: 0.625rem 0;
+  position: relative;
+  float: left;
+}
+.teaser-block .teaser-item .teaser {
+  display: block;
+}
+.teaser-block .teaser .copy, .teaser-block .teaser .img-link {
+  float: left;
+}
+.teaser-block h3 {
+  line-height: 1.4rem;
+}
+.teaser-block h3 a {
+  color: #404041;
+  text-decoration: none;
+}
+.teaser-block h3 a:hover {
+  color: #70655c;
+}
+.teaser-block .teaser-item img {
+  height: auto;
+  max-width: 100%;
+}
+.teaser-block .read-more {
+  margin-top: 20px;
+}
+.teaser-block .read-more a {
+  align-items: center;
+  background: #B31F24;
+  border: 2px solid #B31F24;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  height: 50px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+.teaser-block .read-more a:hover {
+  background: #731424;
+  border: 2px solid #731424;
+}
+@media all and (max-width:767px) {
+  .teaser-block .teaser-list {
+    display: block;
+    padding: 0 15px;
+  }
+  .teaser-block .teaser-item {
+    margin: 0 auto 1.25rem;
+    max-width: 100%;
+  }
+}
+
+#main-wrapper .container {
+  max-width: 1024px;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+#page,
+#main-wrapper{
+    background: #ffffff;
+}
+
+.tabs ul.primary li a.is-active {
+    background-color: #ffffff;
+}
+
+.tabs ul.primary li.is-active a {
+    background-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+#page-wrapper {
+  /*overflow: hidden;*/
+}
+
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 1.5rem 0 1rem;
+}
+.breadcrumb .breadcrumb-item {
+  font-size: .750rem;
+}
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+    </style>
+</head>
+<body>
+
+<div id = "page-wrapper">
+  <div id = "page">
+    <div id ="main-wrapper" class="layout-main-wrapper clearfix" ::after>
+      <div id ="main" class ="container">
+        <div id="block-suzhou-breadcrumbs" class="breadcrumbs block block-system block-system-breadcrumb-block">
+          <div class="content">
+            <nav role="navigation" aria-label="breadcrumb">
+             <ol class="breadcrumb">
+              <li class="breadcrumb-item active">
+              Suzhou at a Glance
+              </li>
+             </ol>
+      </nav>
+    
+        </div>
+      </div>
+        <div class = "row row-offcanvas row-offcanvas-left clearfix" ::after>
+          <main class = "main-content col" id ="content" role ="main">
+            <section class="section">
+              <a id = "main-content" tabindex ="-1" name="main-content"></a>
+          
+  <div class="views-element-container teaser-block block block-views block-views-blocksite-section-teasers-at-a-glance-teasers" id="block-views-block-site-section-teasers-at-a-glance-teasers">
+  
+    
+    <div class="content">
+    <div class="col-auto"><div class="view view-site-section-teasers view-id-site_section_teasers view-display-id-at_a_glance_teasers js-view-dom-id-22503510c1c214a685e36134f0a482d37f75f192f877a710eecc441cbf954e42">
+
+  
+    
+    <div class="view-content row">
+    <div class="teaser-list-wrap">
+
+      <div class="teaser-list-wrap">
+  
+        <ul class="teaser-list">
+      
+                <li class="teaser-item"><div class="teaser row"><div class="copy col-12 col-md-8">
+        <h3><a href="At_a_glance/history.html" hreflang="en">History</a></h3>
+        <p>Suzhou, "Venice of the East," is one of the oldest cities in the Yangtze Basin dating back more than 2,500 years.</p>
+      </div>
+      <div class="img-link col-12 col-md-4">
+      
+        <a href="At_a_glance/history.html"><img src="image/At_a_glance_History.jpg" width="160" height="115" alt="Chinese food in Suzhou" typeof="Image" class="image-style-teaser-thumbs" />
+      
+      </a>
+      
+      <div class="read-more"><a href="At_a_glance/history.html" hreflang="en">READ MORE</a></div>
+      </div></div></li>
+                <li class="teaser-item"><div class="teaser row"><div class="copy col-12 col-md-8">
+        <h3><a href="At_a_glance/culture.html" hreflang="en">Culture</a></h3>
+        <p>The 2,500-year-old city of Suzhou is located along the southeastern edge of Jiangsu Province in eastern China.</p>
+      </div>
+      <div class="img-link col-12 col-md-4">
+      
+        <a href="At_a_glance/culture.html"><img src="image/At_a_glance_culture.png" width="160" height="115" alt="Suzhou China geography" typeof="Image" class="image-style-teaser-thumbs" />
+      
+      </a>
+      
+      <div class="read-more"><a href="At_a_glance/culture.html" hreflang="en">READ MORE</a></div>
+      </div></div></li>
+                <li class="teaser-item"><div class="teaser row"><div class="copy col-12 col-md-8">
+        <h3><a href="At_a_glance/Geography.html" hreflang="en">Geography &amp; map</a></h3>
+        <p>The 2,500-year-old city of Suzhou is located along the southeastern edge of Jiangsu Province in eastern China.</p>
+      </div>
+      <div class="img-link col-12 col-md-4">
+      
+        <a href="At_a_glance/Geography.html"><img src="image/At_a_glance_map.jpg" width="160" height="115" alt="Suzhou China history and culture" typeof="Image" class="image-style-teaser-thumbs" />
+      
+      </a>
+      
+      <div class="read-more"><a href="At_a_glance/Geography.html" hreflang="en">READ MORE</a></div>
+      </div></div></li>
+                <li class="teaser-item"><div class="teaser row"><div class="copy col-12 col-md-8">
+        <h3><a href="At_a_glance/Economic.html" hreflang="en"> Economic</a></h3>
+        <p>Explore our tips and tricks for planning an unforgettable visit to Suzhou in our new pocket guide!</p>
+      </div>
+      <div class="img-link col-12 col-md-4">
+      
+        <a href="At_a_glance/Economic.html"><img src="image/At_a_glance_Economic.jpg" width="160" height="115" alt="Pocket Suzhou Guide Book" typeof="Image" class="image-style-teaser-thumbs" />
+      
+      </a>
+      
+      <div class="read-more"><a href="At_a_glance/Economic.html" hreflang="en">READ MORE</a></div>
+      </div></div></li>
+    
+                <li class="teaser-item"><div class="teaser row"><div class="copy col-12 col-md-8">
+        <h3><a href="At_a_glance/Climate.html" hreflang="en">Climate</a></h3>
+        <p>Despite its old world charm and historic eminence, Suzhou is one of the most developed cities in all of China.</p>
+      </div>
+      <div class="img-link col-12 col-md-4">
+      
+        <a href="At_a_glance/Climate.html"><img src="image/At_a_glance_climate.png" width="160" height="115" alt="Transportation in Suzhou China" typeof="Image" class="image-style-teaser-thumbs" />
+      
+      </a>
+      
+      <div class="read-more"><a href="At_a_glance/Climate.html" hreflang="en">READ MORE</a></div>
+      </div></div></li>
+          
+        </ul>
+      
+      </div>
+
+</div>
+
+  </div>
+
+        </div>
+</div>
+
+  </div>
+</div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
