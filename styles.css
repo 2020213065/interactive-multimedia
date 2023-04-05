@@ -1,0 +1,68 @@
+/* 全局样式 */
+*{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* 局部样式 */
+.logo{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+}
+.nav{
+    float: left;
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 50px;
+    margin-top:70px;
+    margin-left: 20px;
+}
+.nav_menu{
+    display: flex;				
+    line-height: 50px;			
+    max-width: 1000px;           /* 最大宽度 */		
+}
+.nav_item {
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 200px;
+}
+.nav_item a{
+    
+    color:black
+}
+.submenu{
+    width: 190px;
+    height: auto;
+    display: none;				/* 取消可见，让整个子列表处于不可见状态，也可以使用 visibility: hidden */
+    position: absolute;		
+    background: rgb(255, 255, 255);
+    box-shadow: 3px 10px 10px  #b0aeae;
+}
+.submenu a{
+    color: #B31F24;
+    text-align: center;
+}
+.nav_item:hover a{
+    color: #B31F24;
+}
+.nav_item:hover .submenu{
+    display: block;
+}
+.submenu a:hover{
+    color:black;
+    transition: 0.5s;
+}
+
+
+
+
