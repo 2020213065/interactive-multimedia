@@ -1,117 +1,14 @@
 <!DOCTYPE html>
 <head>
+  <meta charset="utf-8">
+  <title>SuZhou City</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
     <style>
-      .teaser-block .teaser-list {
-  /*display: flex;
-  flex-wrap: wrap;*/
-  display: block;
-  list-style: none;
-  padding: 0;
-}
-.teaser-block .teaser-item {
-  border-top: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
-  flex: 1 1 auto;
-  margin: 0 1% 1.25rem;
-  max-width: 48%;
-  padding: 0.625rem 0;
-  position: relative;
-  float: left;
-}
-.teaser-block .teaser-item .teaser {
-  display: block;
-}
-.teaser-block .teaser .copy, .teaser-block .teaser .img-link {
-  float: left;
-}
-.teaser-block h3 {
-  line-height: 1.4rem;
-}
-.teaser-block h3 a {
-  color: #404041;
-  text-decoration: none;
-}
-.teaser-block h3 a:hover {
-  color: #70655c;
-}
-.teaser-block .teaser-item img {
-  height: auto;
-  max-width: 100%;
-}
-.teaser-block .read-more {
-  margin-top: 20px;
-}
-.teaser-block .read-more a {
-  align-items: center;
-  background: #B31F24;
-  border: 2px solid #B31F24;
-  color: #fff;
-  display: flex;
-  font-weight: 700;
-  justify-content: center;
-  height: 50px;
-  padding: 0 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s ease-in-out;
-}
-.teaser-block .read-more a:hover {
-  background: #731424;
-  border: 2px solid #731424;
-}
-@media all and (max-width:767px) {
-  .teaser-block .teaser-list {
-    display: block;
-    padding: 0 15px;
-  }
-  .teaser-block .teaser-item {
-    margin: 0 auto 1.25rem;
-    max-width: 100%;
-  }
-}
 
-#main-wrapper .container {
-  max-width: 1024px;
-  overflow: hidden;
-  width: 100%;
-}
-
-
-#page,
-#main-wrapper{
-    background: #ffffff;
-}
-
-.tabs ul.primary li a.is-active {
-    background-color: #ffffff;
-}
-
-.tabs ul.primary li.is-active a {
-    background-color: #ffffff;
-    border-bottom-color: #ffffff;
-}
-
-#page-wrapper {
-  /*overflow: hidden;*/
-}
-
-
-.clearfix::after {
-    display: block;
-    clear: both;
-    content: "";
-}
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -119,13 +16,6 @@
     flex-wrap: wrap;
     margin-right: 0px;
     margin-left: 0px;
-}
-.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
 }
 
 a {
@@ -141,35 +31,69 @@ body {
     line-height: 1.5rem;
 }
 
-.breadcrumb {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 1.5rem 0 1rem;
-}
-.breadcrumb .breadcrumb-item {
-  font-size: .750rem;
-}
-.breadcrumb-item.active {
-    color: #6c757d;
-}
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
 
-img {
-    height: auto;
-    max-width: 100%;
-    vertical-align: middle;
-    border-style: none;
-}
+
+
     </style>
 </head>
 <body>
+
+  <div id="header">
+    <!-- logo模块 -->
+    <div class="logo">
+        <img src="image/logo(1).png">
+    </div>
+    <!-- 文字导航栏模块 -->
+    <div class="nav">
+        <ul class="nav_menu">
+            <li class="nav_item"><a href="At_a_Glance.html" target="_blank">AT A GLANCE</a>
+                <ul class="submenu">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Geography-map</a></li>
+                    <li><a href="#">Economic</a></li>
+                    <li><a href="#">Climate</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="New_In_Suzhou.html" target="_blank">NEW IN SUZHOU</a>
+                <ul class="submenu">
+                    <li><a href="#">The lates</a></li>
+                    <li><a href="#">Important updates</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="Stay_Plan.html" target="_blank">STAY&PLAN</a>
+                <ul class="submenu">
+                    <li><a href="#">Life</a></li>
+                    <li><a href="#">Transportation</a></li>
+                    <li><a href="#">Basic information</a></li>
+                    <li><a href="#">work</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="Explore.html" target="_blank">EXPLORE</a>
+                <ul class="submenu">
+                    <li><a href="#">Food&Cuisine</a></li>
+                    <li><a href="#">Attraction</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Festival</a></li>
+                    <li><a href="#">Nightlife</a></li>
+                    <li><a href="#">Broadway</a></li>
+                    <li><a href="#">Museums &Gallerye</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="More.html" target="_blank">MORE</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="main">
+  <div class="change">
+      <img src="image/change.png">
+  </div>
+  <div class="at_a_glance">
+      
+  </div>
+</div>
 
 <div id = "page-wrapper">
   <div id = "page">
@@ -225,7 +149,7 @@ img {
       </div>
       <div class="img-link col-12 col-md-4">
       
-        <a href="At_a_glance/culture.html"><img src="image/At_a_glance_culture.png" width="160" height="115" alt="Suzhou China geography" typeof="Image" class="image-style-teaser-thumbs" />
+        <a href="At_a_glance/culture.html"><img src="image/At_a_glance_culture.jpg" width="160" height="115" alt="Suzhou China geography" typeof="Image" class="image-style-teaser-thumbs" />
       
       </a>
       
@@ -262,7 +186,7 @@ img {
       </div>
       <div class="img-link col-12 col-md-4">
       
-        <a href="At_a_glance/Climate.html"><img src="image/At_a_glance_climate.png" width="160" height="115" alt="Transportation in Suzhou China" typeof="Image" class="image-style-teaser-thumbs" />
+        <a href="At_a_glance/Climate.html"><img src="image/At_a_glance_climate.png" width="200" height="115" alt="Transportation in Suzhou China" typeof="Image" class="image-style-teaser-thumbs" />
       
       </a>
       
