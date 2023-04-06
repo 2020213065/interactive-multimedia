@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Planning Your Trip to Suzhou China | Travel to Suzhou</title>
+  <link href="../styles.css" rel="stylesheet">
+  <script src="../scripts.js" defer></script>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+ <style>
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+    </style>
+</head>
+<body>
+
+  <div id="header">
+    <!-- logo模块 -->
+    <div class="logo">
+      <a href="../Home.html">
+          <img src="../image/logo(1).png">
+      </a>
+    </div>
+    <!-- 文字导航栏模块 -->
+    <div class="nav">
+        <ul class="nav_menu">
+            <li class="nav_item"><a href="../At_a_Glance.html" target="_blank">AT A GLANCE</a>
+                <ul class="submenu">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Geography-map</a></li>
+                    <li><a href="#">Economic</a></li>
+                    <li><a href="#">Climate</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="../New_In_Suzhou.html" target="_blank">NEW IN SUZHOU</a>
+                <ul class="submenu">
+                    <li><a href="#">The lates</a></li>
+                    <li><a href="#">Important updates</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="../Stay_Plan.html" target="_blank">STAY&PLAN</a>
+                <ul class="submenu">
+                    <li><a href="Stay_Plan_Life.html">Life</a></li>
+                    <li><a href="Stay_Plan_Tranportation.html">Transportation</a></li>
+                    <li><a href="Stay_Plan_Information.html">Basic information</a></li>
+                    <li><a href="Stay_Plan_Work.html">Work</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="../Explore.html" target="_blank">EXPLORE</a>
+                <ul class="submenu">
+                    <li><a href="#">Food&Cuisine</a></li>
+                    <li><a href="#">Attraction</a></li>
+                    <li><a href="#">Shopping</a></li>
+                    <li><a href="#">Festival</a></li>
+                    <li><a href="#">Nightlife</a></li>
+                    <li><a href="#">Broadway</a></li>
+                    <li><a href="#">Museums &Gallerye</a></li>
+                </ul>
+            </li>
+            <li class="nav_item"><a href="../More.html" target="_blank">MORE</a></li>
+        </ul>
+    </div>
+</div>
+<!--左上角的标志-->
+<div id="main">
+  <div class="change">
+      <img src="../image/change.png">
+  </div>
+  <div class="at_a_glance"></div>
+</div>
+
+
+</header>
+    <div class="highlighted">
+        <aside class="container section clearfix" role="complementary">
+            <div id="block-mainnavborder" class="header-decoration block block-block-content block-block-content2a249708-3667-4aaf-bb07-5e181ee78537">
+
+
+            <div class="content">
+
+            <div class="block-inner clearfix text-formatted field field--name-body field--type-text-with-summary field--label-visually_hidden">
+            <div class="small-frame field__item"><div class="hd-inner"><img alt="" role="presentation" src="/sites/default/files/header_obj.svg" /></div>
+            </div>
+            </div>
+
+            </div>
+            </div>
+            <div data-drupal-messages-fallback class="hidden"></div>
+
+
+        </aside>
+    </div>
+<!--主题介绍-->
+<div id="main-wrapper" class="layout-main-wrapper clearfix">
+    <div id="main" class="container">
+        <div id="block-suzhou-breadcrumbs" class="breadcrumbs block block-system block-system-breadcrumb-block">
+            <div class="content">
+                <nav role="navigation" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active">
+                            <a href="../Home.html">HOME</a>
+                        </li> 
+                    <li class="breadcrumb-item active">
+                        <a href="../Stay_Plan.html">STAY & PLAN</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a href="#">WORK</a>
+                    </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
+
+          <div class="background-image-container">
+            <div class="search-container">
+              <!-- ...您现有的搜索表单代码... -->
+              <!--搜索栏-->
+            <div class="search-container">
+                <div class="ink-search">
+                    <form id="ink-search-form" action="/search" method="get">
+                        <input type="text" name="query" placeholder="Search..." />
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>  
+            <!--注释-->
+              <div class="info-text">
+                Information: aaa
+              </div>
+            </div>
+          </div>  
+
+        
+        <script>
+          document.getElementById('ink-search-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // 阻止表单的默认提交行为
+        
+            const query = event.target.query.value; // 获取输入框中的内容
+        
+            if (query === 'Information') {
+              window.location.href = 'Stay_Plan_Information.html'; // 如果输入的内容为'A'，则跳转到A.html页面
+            } else {
+              // 如果输入的内容不是'A'，可以执行其他操作，例如显示错误消息或跳转到其他页面
+              alert('Invalid search query. Please enter another word.');
+            }
+          });
+        </script>
+                
+         
+    </body>

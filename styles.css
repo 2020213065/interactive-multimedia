@@ -1,68 +1,305 @@
 /* 全局样式 */
 *{
-    margin:0;
-    padding: 0;
+  margin:0;
+  padding: 0;
 }
 li{
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* 局部样式 */
 .logo{
-    float: left;
-    width: 150px;
-    height: 150px;
-    margin-left: 30px;
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-left: 30px;
 }
 .nav{
-    float: left;
-    background-color: rgb(255, 255, 255);
-    width: 1000px;
-    height: 50px;
-    margin-top:70px;
-    margin-left: 20px;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  width: 1000px;
+  height: 50px;
+  margin-top:70px;
+  margin-left: 20px;
 }
 .nav_menu{
-    display: flex;				
-    line-height: 50px;			
-    max-width: 1000px;           /* 最大宽度 */		
+  display: flex;				
+  line-height: 50px;			
+  max-width: 1000px;           /* 最大宽度 */		
 }
 .nav_item {
-    text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
-    width: 200px;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 200px;
 }
 .nav_item a{
-    
-    color:black
+  
+  color:black
 }
 .submenu{
-    width: 190px;
-    height: auto;
-    display: none;				/* 取消可见，让整个子列表处于不可见状态，也可以使用 visibility: hidden */
-    position: absolute;		
-    background: rgb(255, 255, 255);
-    box-shadow: 3px 10px 10px  #b0aeae;
+  width: 190px;
+  height: auto;
+  display: none;				/* 取消可见，让整个子列表处于不可见状态，也可以使用 visibility: hidden */
+  position: absolute;		
+  background: rgb(255, 255, 255);
+  box-shadow: 3px 10px 10px  #b0aeae;
 }
 .submenu a{
-    color: #B31F24;
-    text-align: center;
+  color: #B31F24;
+  text-align: center;
 }
 .nav_item:hover a{
-    color: #B31F24;
+  color: #B31F24;
 }
 .nav_item:hover .submenu{
-    display: block;
+  display: block;
 }
 .submenu a:hover{
-    color:black;
-    transition: 0.5s;
+  color:black;
+  transition: 0.5s;
+}
+
+/*导览样式*/
+.teaser-block .teaser-list {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+.teaser-block .teaser-item {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  flex: 1 1 auto;
+  margin: 0 1% 1.25rem;
+  max-width: 48%;
+  padding: 0.625rem 0;
+  position: relative;
+  float: left;
+}
+.teaser-block .teaser-item .teaser {
+  display: block;
+}
+.teaser-block .teaser .copy, .teaser-block .teaser .img-link {
+  float: left;
+}
+.teaser-block h3 {
+  line-height: 1.4rem;
+}
+.teaser-block h3 a {
+  color: #404041;
+  text-decoration: none;
+}
+.teaser-block h3 a:hover {
+  color: #70655c;
+}
+.teaser-block .teaser-item img {
+  height: auto;
+  max-width: 100%;
+}
+.teaser-block .read-more {
+  margin-top: 10px;
+}
+.teaser-block .read-more a {
+  align-items: center;
+  background: #B31F24;
+  border: 1px solid #B31F24;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  height: 40px;
+  font-size: 13px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+.teaser-block .read-more a:hover {
+  background: #731424;
+  border: 2px solid #731424;
+}
+@media all and (max-width:767px) {
+  .teaser-block .teaser-list {
+    display: block;
+    padding: 0 15px;
+  }
+  .teaser-block .teaser-item {
+    margin: 0 auto 1.25rem;
+    max-width: 100%;
+  }
+}
+
+/**Breadcrumbs**/
+.breadcrumb {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 1.5rem 0 1rem;
+}
+.breadcrumb .breadcrumb-item {
+  font-size: .750rem;
+}
+.breadcrumb-item.active {
+    color: #6c757d;
 }
 
 
+/**页面设置**/
+.path-frontpage #main-wrapper .container {
+    max-width: 1280px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+  }
+  #main-wrapper .container {
+    max-width: 1100px;
+    overflow: hidden;
+    width: 100%;
+  }
 
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
+header {
+    background: #354458;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #555;
+    color: #f1f1f1;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.dropdown-list {
+    display: none;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    margin-top: 10px;
+}
+
+.dropdown-option {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-option:hover {
+    background-color: #555;
+    color: #f1f1f1;
+}
+
+.dropdown-toggle {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.ink-search {
+  font-family: '宋体', serif;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ink-search input[type="text"] {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.ink-search button {
+  font-family: '宋体', serif;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* 使容器至少占据整个视口高度 */
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* 使容器至少占据整个视口高度 */
+  background-image: url('image/Search.jpg'); /* 将图片设置为背景图像 */
+  background-position: center; /* 使背景图像居中 */
+  background-repeat: no-repeat; /* 防止背景图像重复 */
+  background-size: cover; /* 使背景图像覆盖整个容器 */
+}
+.info-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.background-image-container {
+  background-image: url('image/Search.jpg');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
