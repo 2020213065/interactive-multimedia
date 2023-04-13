@@ -126,7 +126,7 @@ color:#fd5c63;
   background-color: rgb(255, 255, 255);
   width: 1000px;
   height: 50px;
-  margin-top:20px;
+  margin-top:70px;
   margin-left: 20px;
 }
 .nav_menu{
@@ -145,6 +145,7 @@ color:#fd5c63;
 }
 .submenu{
   width: 190px;
+  z-index: 100;
   height: auto;
   display: none;				/* 取消可见，让整个子列表处于不可见状态，也可以使用 visibility: hidden */
   position: absolute;		
@@ -418,7 +419,60 @@ color:#fd5c63;
     width: 100%;
   }
   #main-wrapper .container {
-    max-width: 1100px;
+    max-width: 1024px;
     overflow: hidden;
     width: 100%;
   }
+
+  /**Featured Image**/
+.featured-img {
+  text-align: center;
+}
+figcaption {
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.field--name-field-user-picture img {
+  margin: 0 0 1em;
+}
+
+/**Add 2 Any**/
+.node--type-page .a2a_kit + .field--name-body {
+  padding-left: 75px;
+}
+.page-node-2 .a2a_kit, .page-node-3 .a2a_kit, .page-node-4 .a2a_kit, .page-node-5 .a2a_kit, .page-node-6 .a2a_kit, .page-node-7 .a2a_kit, .page-node-28 .a2a_kit, .page-node-34 .a2a_kit, .page-node-35 .a2a_kit, .page-node-37 .a2a_kit, .page-node-38 .a2a_kit, .page-node-65 .a2a_kit, .page-node-79 .a2a_kit, .page-node-80 .a2a_kit, .page-node-67 .a2a_kit, .page-node-81 .a2a_kit {
+  display: none;
+}
+.page-node-2 .a2a_kit + .field--name-body, .page-node-3 .a2a_kit + .field--name-body, .page-node-4 .a2a_kit + .field--name-body, .page-node-5 .a2a_kit + .field--name-body, .page-node-6 .a2a_kit + .field--name-body, .page-node-7 .a2a_kit + .field--name-body, .page-node-28 .a2a_kit + .field--name-body, .page-node-34 .a2a_kit + .field--name-body, .page-node-35 .a2a_kit + .field--name-body, .page-node-37 .a2a_kit + .field--name-body, .page-node-38 .a2a_kit + .field--name-body, .page-node-65 .a2a_kit + .field--name-body, .page-node-79 .a2a_kit + .field--name-body, .page-node-80 .a2a_kit + .field--name-body, .page-node-67 .a2a_kit + .field--name-body, .page-node-81 .a2a_kit + .field--name-body {
+  padding-left: 0 !important;
+}
+.node--type-page .a2a_kit {
+  float: left;
+  position: relative;
+  width: 50px;
+  z-index: 1;
+}
+.a2a_vertical_style a {
+  align-items: center;
+  border: 2px solid #B31F24;
+  border-radius: 50px;
+  display: flex !important;
+  font-size: 1.75rem;
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: relative;
+  transition: all .3s ease;
+  width: 50px;
+}
+.a2a_vertical_style a:hover {
+  border-color: #731424;
+  color: #731424;
+}
+.addtoany_list.a2a_kit_size_32 a > span {
+  display: none;
+}
+

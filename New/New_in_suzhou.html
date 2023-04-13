@@ -4,120 +4,102 @@
 <head>
     <meta charset="utf-8">
     <title>SuZhou City</title>
-    <link href="css/New.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/New.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <script src="scripts.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <style>
+
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        
+            </style>
 </head>
 
 <body>
 
-    <nav id="header"  style="background-image: url('image/Search.jpg')">
+    <div id="header">
         <!-- logo模块 -->
-        <div class="top-header">
-            <section class="logo">
-                <a href="Home.html">
-                    <img src="image/logo(1).png" alt="#0779bf">
-                </a>
-            </section>
-            <div class="background-image-container">
-                <div class="search-container">
-                    <!-- ...您现有的搜索表单代码... -->
-
-                    <oi>
-                        <li>
-                            <div class="ink-search">
-                                <form id="ink-search-form" action="/search" method="get">
-                                    <input type="text" name="query" placeholder="Search..." />
-                                    <button type="submit">Search</button>
-                                </form>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info-text">
-                                Search for content you're interested about Suzhou! Such as Basic
-                                Information, Transportation, etc.
-                            </div>
-                        </li>
-                    </oi>
-
-                </div>
-            </div>
+        <div class="logo">
+          <a href="../Home/HomePage.html">
+            <img src="../image/logo(1).png">
+          </a>
         </div>
-        <!-- 寻址模块 -->
-        <section class="navbar" id="navbar-all">
-
-            <!-- 文字导航栏模块 -->
-            <nav class="nav">
-                <ul class="nav_menu">
-                    <li class="nav_item"><a href="At_a_Glance.html" target="_blank">AT A GLANCE</a>
-                        <ul class="submenu">
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Culture</a></li>
-                            <li><a href="#">Geography-map</a></li>
-                            <li><a href="#">Economic</a></li>
-                            <li><a href="#">Climate</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_item"><a href="New_In_Suzhou.html" target="_blank">NEW IN SUZHOU</a>
-                        <ul class="submenu">
-                            <li><a href="#">The lates</a></li>
-                            <li><a href="#">Important updates</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_item"><a href="Stay_Plan.html" target="_blank">STAY&PLAN</a>
-                        <ul class="submenu">
-                            <li><a href="#">Life</a></li>
-                            <li><a href="#">Transportation</a></li>
-                            <li><a href="#">Basic information</a></li>
-                            <li><a href="#">work</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_item"><a href="Explore.html" target="_blank">EXPLORE</a>
-                        <ul class="submenu">
-                            <li><a href="#">Food&Cuisine</a></li>
-                            <li><a href="#">Attraction</a></li>
-                            <li><a href="#">Shopping</a></li>
-                            <li><a href="#">Festival</a></li>
-                            <li><a href="#">Nightlife</a></li>
-                            <li><a href="#">Broadway</a></li>
-                            <li><a href="#">Museums &Gallerye</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav_item"><a href="More.html" target="_blank">MORE</a></li>
-                </ul>
-            </nav>
-
-        </section>
-
-    </nav>
-
-    <!--主题内容部分-->
+        <!-- 文字导航栏模块 -->
+        <div class="nav">
+            <ul class="nav_menu">
+                <li class="nav_item"><a href="../At_a_glance/At_a_glance.html">AT A GLANCE</a>
+                    <ul class="submenu">
+                        <li><a href="../At_a_glance/History.html">History</a></li>
+                        <li><a href="../At_a_glance/Culture.html">Culture</a></li>
+                        <li><a href="../At_a_glance/Geography.html">Geography-map</a></li>
+                        <li><a href="../At_a_glance/Economic.html">Economic</a></li>
+                        <li><a href="../At_a_glance/Climate.html">Climate</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="../New/New_in_suzhou.html">NEW IN SUZHOU</a>
+                    <ul class="submenu">
+                        <li><a href="../New/The_Lates.html">The lates</a></li>
+                        <li><a href="../New/Important updates.html">Important updates</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="../Stay_Plan/Stay_Plan.html">STAY&PLAN</a>
+                    <ul class="submenu">
+                        <li><a href="../Stay_Plan/Stay_Plan_Life.html">Life</a></li>
+                        <li><a href="../Stay_Plan/Stay_Plan_Tranportation.html">Transportation</a></li>
+                        <li><a href="../Stay_Plan/Stay_Plan_Information.html">Basic information</a></li>
+                        <li><a href="../Stay_Plan/Stay_Plan_Work.html">work</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="../Explore/Explore.html">EXPLORE</a>
+                    <ul class="submenu">
+                        <li><a href="../Explore/Food_And_Cuisine.html">Food&Cuisine</a></li>
+                        <li><a href="../Explore/Attraction.html">Attraction</a></li>
+                        <li><a href="../Explore/Shopping.html">Shopping</a></li>
+                        <li><a href="../Explore/Festival.html">Festival</a></li>
+                        <li><a href="../Explore/Nightlife.html">Nightlife</a></li>
+                        <li><a href="../Explore/Broadway.html">Broadway</a></li>
+                        <li><a href="../Explore/Museums_And_Gallerye.html">Museums &Gallerye</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="../More/more.html">MORE</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--左上角的标志-->
     <div id="main">
-        <div class="change">
-            </img src="images/change.png">
-        </div>
+      <div class="change">
+          <img src="../image/change.png">
+      </div>
+      <div class="at_a_glance">
+          
+      </div>
+    </div>
 
-        <div class="new_in_suzhou">
-            <div class="col-xs-12">
-                <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-                    <li><a class="no-underline" href="Home.html">
-                            <span itemprop="name">Home</span></a>
-                        <meta itemprop="position" content="1">
-                    </li>
-                    <li>></li>
-                    <li><a class="no-underline" href="New_in_suzhou.html">
-                            <span itemprop="name">New in Suzhou</span></a>
-                        <meta itemprop="position" content="2">
-                    </li>
-                    <li>></li>
-                    <li>
-                        <span itemprop="name">Latest news in suzhou</span>
-                        <meta itemprop="position" content="3">
-                    </li>
-                </ol>
-            </div>
-        </div>
+    
 
         <div class="web-title">
             <h1>Latest news in suzhou</h1>
