@@ -965,7 +965,7 @@ p {
 /**Top 10 Attractions**/
 .top-ten {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1500px;
   overflow: hidden;
   padding: 0;
 }
@@ -973,7 +973,7 @@ p {
   display: block;
 }
 .top-ten .slick, .top-ten .slick-wrapper {
-  max-width: 1280px;
+  max-width: 1500px;
   overflow: hidden;
 }
 .top-ten h2 {
@@ -1343,18 +1343,6 @@ p {
 }
 
 
-.expert-tips figure span::before {
-  background: url(../image/red_circle.svg) center no-repeat;
-  padding: 30px;
-  content: '';
-  position: absolute;
-  display: block;
-  height: 100%;
-  left: 0;
-  top: 1px;
-  width: 100%;
-  z-index: 1;
-}
 
 .row1 {
   height: 350px;
@@ -1765,4 +1753,103 @@ h3 {
   height: 30px;
   width: 100%;
   margin-top: -16px;
+}
+
+/**
+*Highlighted*
+**/
+.highlighted {
+  overflow: hidden;
+}
+.highlighted > .container {
+  max-width: 100%;
+  padding: 0;
+  position: relative;
+}
+.header-decoration .small-frame {
+  margin: 0 !important;
+}
+.header-decoration .hd-inner {
+  top: -31px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.header-decoration .hd-inner img {
+  height: 40px;
+  width: 100%;
+}
+.header-decoration .content {
+  position: relative;
+}
+.path-frontpage .header-decoration .content:before {
+  position: absolute;
+}
+.header-decoration .content:before {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
+  content: '';
+  display: block;
+  height: 20px;
+  left: 0;
+}
+
+  /**Small Frame(inner-container)**/
+.path-frontpage .small-frame {
+  clear: both;
+  display: block;
+  margin: 85px auto 50px;
+  max-width: 800px;
+  padding: 0 1rem;
+  text-align: center;
+}
+.path-frontpage .small-frame .btn {
+  margin-top: 20px;
+}
+.small-frame .btn-primary {
+  border: 2px solid #B31F24 !important;
+  border-radius: 0;
+  color: #B31F24 !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 0 25px;
+  transition: all .3s ease-in-out !important;
+}
+.small-frame .btn-primary:hover {
+  background: #B31F24 !important;
+  color: #fff !important;
+}
+.node--type-page .field--type-image {
+  float: none;
+  margin: 0;
+}
+@media all and (max-width:768px) {
+  .path-frontpage .small-frame {
+    margin-top: 50px;
+  }
+}
+
+
+.expert-tips figure span::before {
+  background: url(../image/red_circle.svg) center no-repeat;
+  padding: 30px;
+  content: '';
+  position: absolute;
+  display: block;
+  height: 105%;
+  left: -25px;
+  top: -16px;
+  width: 105%;
+  z-index: 1;
+}
+
+.expert-tips figure img {
+  border-radius: 110%;
+  flex-basis: 30%;
+  max-width: 500px;
+   padding: -20px; 
 }
