@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Map</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' >
+    <style>
+        body { margin: 0; padding: 0;height: 100%; }
+        #map { position: absolute; top: 0; bottom: 0; height: 75%; width: 50%; left: 25%; border: 15px solid rgb(43, 174, 87); border-radius: 15px; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); }
+
+        .attraction-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id='map'></div>
+    <div id="buttons">
+        <button class="attraction-btn" id="attraction-1">鼋头渚</button>
+        <button class="attraction-btn" id="attraction-2">无锡三国城</button>
+        <button class="attraction-btn" id="attraction-3">灵山大佛</button>
+        <button class="attraction-btn" id="attraction-4">锡惠公园</button>
+    </div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FveXVhbmNoZW4iLCJhIjoiY2xnY2VkY291MDJlcTNxbzAzbmUwYjZueiJ9.w7dMybzOTiKmxrX-E0oX-w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11', // 使用 streets-v11 风格
+            center: [120.31191, 31.49117], // 设置地图中心为无锡市
+            zoom: 12,
+            maxZoom: 14.5  // 设置地图缩放级别
+        });
+
+        // 无锡市经典景点及著名建筑
+        var locations = [
+            { name: '鼋头渚', coordinates: [120.226659, 31.467957], imageUrl: 'YOUR_IMAGE_URL_1' },
+            { name: '无锡三国城', coordinates: [120.439573, 31.494698] },
+            { name: '灵山大佛', coordinates: [120.428099, 31.342950] },
+            { name: '锡惠公园', coordinates: [120.312599, 31.491254] }
+        ];
+
+        var markers = [null, null, null, null];
+
+        map.on('load', function () {
+        locations.forEach(function(location, index) {
+        var el = document.createElement('img');
+        el.src = location.imageUrl;
+        el.style.width = '30px';
+        el.style.height = '30px';
+        el.id = 'marker-' + (index + 1);
+        el.style.display = 'none';
+
+        var marker = new mapboxgl.Marker(el)
+            .setLngLat(location.coordinates)
+            .setPopup(new mapboxgl.Popup().setHTML('<h3>' + location.name + '</h3>'))
+            .addTo(map);
+
+        markers.push(marker);
+        });
+        function toggleAttraction(index) {
+            if (markers[index]) {
+                markers[index].remove();
+                markers[index] = null;
+            } else {
+                const location = locations[index];
+                markers[index] = new mapboxgl.Marker()
+                    .setLngLat(location.coordinates)
+                    .setPopup(new mapboxgl.Popup().setHTML('<h3>' + location.name + '</h3>'))
+                    .addTo(map);
+            }
+
+        document.getElementById("attraction-1").addEventListener("click", () => toggleAttraction(0));
+        document.getElementById("attraction-2").addEventListener("click", () => toggleAttraction(1));
+        document.getElementById("attraction-3").addEventListener("click", () => toggleAttraction(2));
+        document.getElementById("attraction-4").addEventListener("click", () => toggleAttraction(3));
+        }
+    });
+    </script>
+</body>
+</html>
+
+
