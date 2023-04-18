@@ -136,7 +136,7 @@ a {
 
 
 
-.new_in_suzhou::before {
+.new_in_Wuxi::before {
     margin-left: -15px;
     margin-right: -15px;
     box-sizing: border-box;
@@ -150,7 +150,7 @@ a {
     box-sizing: border-box;
 }
 
-.new_in_suzhou::after {
+.new_in_Wuxi::after {
     margin-left: -15px;
     margin-right: -15px;
     box-sizing: border-box;
