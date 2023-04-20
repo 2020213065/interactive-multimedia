@@ -2,7 +2,7 @@
 ---
 ### Group Number:2020EBU6305G21
 ---
-### Project Titile: Grate Suzhou
+### Project Titile: Grate Wuxi
 ---
 ###   Members:
 - Shiming Jiang, 2020213065, 200977559, jp2020213065@qmul.ac.uk<br>
