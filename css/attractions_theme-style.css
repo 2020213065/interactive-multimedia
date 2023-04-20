@@ -1,0 +1,468 @@
+
+/*----start-about----*/
+.about{
+	padding:5em 0;
+}
+.about-left p{
+	font-size: 3.5em;
+	text-transform: uppercase;
+	font-weight: 100;
+	color: #000000;
+	width: 76%;
+}
+.about-left p span{
+	color:#00AAEF;
+}
+.about-left p label{
+	font-weight:500;
+}
+.about-right h3,.about-right span{
+	font-weight: 400;
+	color: #000;
+	font-size: 1.2em;
+}
+.about-right span{
+	margin-top:1em;
+	display:block;
+}
+.about-right p,.about-right li{
+	color: #222222;
+	font-size: 0.9em;
+	font-weight: 500;
+	line-height: 1.8em;
+	font-family: 'Open Sans', sans-serif;
+}
+/*-----start-gallery---*/
+.gallery{
+	background:#EEEEEE;
+	padding:3em 0;
+}
+.head h3{
+	color: #000000;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 300;
+	width: 17.3%;
+	margin: 0 auto;
+}
+.head span{
+	width: 189px;
+	height: 13px;
+	display: block;
+	background: url(../images/head-border.png) no-repeat 0px 0px;
+	margin-top: 0.15em;
+}
+/* Self Clearing Goodness */
+/*	Strip
+/*-----------------------------------------------------------------------------------*/
+.b-link-stripe{
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	font-weight: 300;
+	overflow:hidden;
+	width: 100%;
+}
+.b-link-stripe .b-wrapper{
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	text-align:center;
+	color:#ffffff;
+	overflow:hidden;
+}
+.b-link-stripe .b-line{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:20%;
+	
+	background:rgba(178, 37, 37, 0.85);
+	transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	opacity:0;
+	visibility:hidden; /* lt-ie9 */
+}
+/* lt-ie9 */
+.b-link-stripe:hover .b-line{
+	visibility:visible;
+}
+.b-link-stripe .b-line1{
+	left:0;
+}
+.b-link-stripe .b-line2{
+	left:20%;
+	transition-delay:0.1s !important;
+	-moz-transition-delay:0.1s !important;
+	-ms-transition-delay:0.1s !important;
+	-o-transition-delay:0.1s !important;
+	-webkit-transition-delay:0.1s !important;
+}
+.b-link-stripe .b-line3{
+	left:40%;
+	transition-delay:0.2s !important;
+	-moz-transition-delay:0.2s !important;
+	-ms-transition-delay:0.2s !important;
+	-o-transition-delay:0.2s !important;
+	-webkit-transition-delay:0.2s !important;
+}
+.b-link-stripe .b-line4{
+	left:60%;
+	transition-delay:0.3s !important;
+	-moz-transition-delay:0.3s !important;
+	-ms-transition-delay:0.3s !important;
+	-o-transition-delay:0.3s !important;
+	-webkit-transition-delay:0.3s !important;
+}
+.b-link-stripe .b-line5{
+	left:80%;
+	transition-delay:0.4s !important;
+	-moz-transition-delay:0.4s !important;
+	-ms-transition-delay:0.4s !important;
+	-o-transition-delay:0.4s !important;
+	-webkit-transition-delay:0.4s !important;
+}
+.b-link-stripe:hover .b-line{
+	opacity:1;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	Animation effects
+/*-----------------------------------------------------------------------------------*/
+.b-animate-go{
+	text-decoration:none;
+}
+.b-animate{
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	visibility: hidden;
+	font-size:1.1em;
+	font-weight:700;
+}
+.b-animate img{
+	margin-top: 4%;
+	display: -webkit-inline-box;
+}
+.b-animate span{
+	display:block;
+	font-size: 2em;
+	text-transform: uppercase;
+	padding-top: 2.3em;
+	display: block;
+	font-weight: 500;
+}
+.b-animate button{
+	background: #000;
+	padding: 0.9em 1.8em;
+	color: #8e6565;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	border: none;
+	border-radius: 0.3em;
+	margin: 0.8em auto;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+}
+.b-animate button:hover{
+	background:#3B3B43;
+	color:#fff;
+}
+.b-animate label{
+	display:block;
+	font-size:0.875em;
+	margin-top:0.5em;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+	-o-transition:0.5s all;
+}
+.b-animate label:hover{
+	color:#000;
+	cursor:pointer;
+}
+/* lt-ie9 */
+.b-animate-go:hover .b-animate{
+	visibility:visible;
+}
+.b-from-left{
+	position: relative;
+	left: -100%;
+	background: rgba(178, 37, 37, 0.712);
+	background-size: 100% 100%;
+	top: 0px;
+	margin: 0;
+	min-height: 307px;
+}
+.b-animate-go:hover .b-from-left{
+	left:0;
+}
+/*----*/
+/*-----start-gallery----*/
+.gallery-grids{
+	padding:3em 0 0 0;
+}
+.port-pic{
+	width:100%;
+}
+.place{
+	color: #000;
+	font-weight: 500;
+	padding: 0.5em 1em;
+}
+.place a{
+	color:#b22525;
+}
+.place a:hover{
+	text-decoration:none;
+	color:#222;
+}
+.view-gallery-btn{
+	background: #00AAEF;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	padding: 0.875em 0em;
+	width: 15%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.view-gallery-btn:hover{
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+}
+
+/*--responsive design--*/
+@media (max-width:1366px){ 
+ .top-nav ul li a {
+	padding: 0.1em 1.9em;
+ }
+}
+@media (max-width:1024px){ 
+ .top-nav ul li a {
+	padding: 0.1em 1.8em;
+	font-size:1em;
+ }
+ .bg {
+    min-height: 600px;
+ }
+ nav {
+	top:410px;
+ }
+ .about-left p {
+	font-size:3em;
+ }
+ .head h3 {
+	font-size:2em;
+ }
+ .head span {
+	background-size:65%;
+ }
+ .footer {
+	min-height: 400px;
+ }
+ .copy-right {
+	margin-top: 15%;
+ }
+}
+@media (max-width:800px){
+ .bg {
+    min-height: 500px;
+ }
+ nav {
+	top:310px;
+ }
+ .top-nav ul li a {
+	padding: 0.1em 1.5em;
+	font-size: 0.85em;
+ }
+ .about-left p {
+	font-size: 2em;
+ }
+ .testmonials-grids {
+	padding-top: 2em;
+ }
+ .contact-grids {
+	padding-top: 1em;
+ }
+ .footer {
+	min-height: 300px;
+ }
+ .consulation-grids {
+	padding: 1em 0 0 0;
+ }
+ .head span {
+	background-size: 50%;
+ }
+ .testmonial-grid {
+	margin-bottom: 30px;
+ }
+ .contact-left p, .contact-left p label {
+	font-size: 1em;
+	font-weight: 500;
+ }
+ .contact-left a, .contact-left p, .contact-left p label {
+	font-size: 1em;
+	font-weight: 500;
+ }
+}
+@media (max-width:768px){
+ .bg {
+    min-height:400px;
+ }
+ nav {
+	top: -127px;
+ }
+ .top-nav ul li a {
+	padding: 0.1em 1.5em;
+	font-size: 0.85em;
+ }
+ .about-left p {
+	font-size: 2em;
+ }
+ .testmonials-grids {
+	padding-top: 2em;
+ }
+ .contact-grids {
+	padding-top: 1em;
+ }
+ .footer {
+	min-height: 300px;
+ }
+ .consulation-grids {
+	padding: 1em 0 0 0;
+ }
+ .contact-order {
+	display: none;
+ }
+}
+@media (max-width:480px){
+ .contact-no span {
+	font-size: 1em;
+	margin-top: 0.2em;
+ }
+ .logo {
+	left: 41%;
+	top: 17px;
+ }
+ nav {
+	top: -70px;
+ }
+ .bg {
+   min-height: 250px;
+ }
+ .about {
+	padding: 2em 0;
+ }
+ .about-left p {
+	font-size:1.5em;
+	font-weight:400;
+	width:100%;
+ }
+ .consulation-left h4 {
+	font-size: 1.4em;
+	width:100%;
+ }
+ .head h3 {
+	width: 30.3%;
+ }
+ .gallery-grids {
+	padding: 1em 0 0 0;
+ }
+ .view-gallery-btn {
+	padding: 0.75em;
+	width: 32%;
+ }
+ .head h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+ }
+ .head span {
+	background-size: 50%;
+ }
+ .b-animate span {
+	font-size: 1.5em;
+ }
+ .footer {
+	min-height: 200px;
+ }
+ .consulation-left p {
+	line-height: 1.5em;
+	font-size: 0.8125em;
+	width: 100%;
+ }
+ .consulation-right input[type="text"], .consulation-right input[type="submit"], .contact-right input[type="text"], .contact-right textarea {
+ 	padding: 0.7em;
+ 	font-size:0.85em;
+ }
+ .testmonials-grids {
+	padding-top: 1em;
+ }
+ nav a#pull img {
+	padding-top:40px;
+ }
+ nav {
+	top: -98px;
+ }
+ .contact-no {
+	margin-top: 10px;
+ }
+}
+@media (max-width:320px){
+  .contact-no {
+	display: none;
+ }
+ .logo {
+	left: 27%;
+	top: 14px;
+ }
+ nav {
+	top: -64px;
+ }
+ .bg {
+	min-height: 200px;
+ }
+ .about-left p {
+	font-size: 1.2em;
+ }
+ .about-right h3, .about-right span {
+	font-weight: 600;
+	font-size: 0.95em;
+	margin: 10px 0;
+ }
+ .head h3 {
+	width: 55.3%;
+ }
+ .view-gallery-btn {
+	padding: 0.6em;
+	width: 40%;
+	font-size: 0.8125em;
+ }
+ .consulation-left h4 {
+	font-size: 1em;
+	width: 100%;
+	font-weight: 500;
+ }
+ .consulation-grids {
+	padding: 0;
+ }
+ .b-animate span {
+	font-size: 1em;
+ }
+ .b-animate button {
+	padding: 0.5em 1em;
+	font-size: 0.8125em;
+ }
+}
