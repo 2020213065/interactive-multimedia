@@ -12,11 +12,14 @@ h1,
 
 h2,
 .h2 {
+  
+  text-align: center;
   color: #404041;
   font-family: 'Libre Baskerville', serif;
   font-size: 1.750rem;
   line-height: 38px;
   margin-bottom: 1rem;
+
 }
 
 h2 .small {
@@ -60,11 +63,10 @@ a {
 /* 广告栏样式 */
 .banner {
   float: left;
-  width: 75%;
+  width: 1000px;
   height: 30px;
-  margin-left: 70px;
   margin-top: 30px;
-  background-color: #46b88d;
+  background-color: #ffffff;
 }
 
 .top-banner-left {
@@ -130,17 +132,23 @@ a {
   float: left;
   width: 150px;
   height: 150px;
+
+  background-color: #ffffff;
+}
+
+.logo img {
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* 导航栏样式 */
 .nav {
   float: left;
-  background-color: rgb(201, 61, 61);
-  width: 80%;
+  background-color: rgb(255, 255, 255);
+  width: 1000px;
   height: 50px;
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 30px;
 }
 
 .nav_menu {
@@ -151,11 +159,11 @@ a {
   /* 最大宽度 */
 }
 
-.nav .nav_item {
+.nav_item {
   text-align: center;
   margin-right: 0px;
   margin-left: 0px;
-  width:300px ;
+  width: 200px;
 }
 
 .nav_item a {
@@ -242,7 +250,7 @@ a {
 .wrapper {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-color: pink;
   margin: 0 auto;
   overflow: hidden;
@@ -319,7 +327,7 @@ a {
   background-color: white;
 }
 
-/* 城市简介 */
+/* introduction */
 .introduction {
   background-color: #ffffff;
   width: 100%;
@@ -329,9 +337,21 @@ a {
 }
 
 .introduction p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin: 0 0 20px;
+  line-height: 2rem;
   width: 50%;
   margin-left: 25%;
   background-color: #ffffff;
+}
+
+.introduction h2 {
+  color: #404041;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 1rem;
 }
 
 .introduction .read-more {
@@ -365,7 +385,7 @@ a {
 
 
 
-/**地图部分**/
+/**map**/
 .map {
   text-align: center;
   width: 100%;
@@ -410,7 +430,7 @@ a {
   font-size: 3.438rem;
   line-height: 58px;
   text-align: left;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .where-section .small-frame h2:after {
@@ -540,7 +560,7 @@ a {
   padding: 0;
 }
 
-.path-frontpage .tour-packages h2 {
+.tour-packages .view-header h1 {
   color: #0A9444;
   font-family: 'Kaushan Script', cursive;
   font-size: 3.438rem;
@@ -1115,7 +1135,9 @@ a {
   margin-bottom: 0;
   background-color: #ffffff;
   overflow: hidden
-  
+}
+.top10 h1{
+  font-size:50px;
 }
 
 /**Top 10 版面设置 **/
@@ -1292,6 +1314,11 @@ a {
   height: 500px;
   margin-left: 25%;
   background-color: #6e7421;
+}
+.event .view-header h2 {
+ color: #4c5e87;
+
+  
 }
 
 
@@ -1759,7 +1786,7 @@ a {
 
 /*页脚*/
 #logo {
-  background-image: url(../image/logo\(1\).png);
+  background-image: url(../image/logo-footer.jpg);
   background-size: cover;
 }
 

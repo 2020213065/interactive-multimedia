@@ -13,6 +13,17 @@
  
 
     <style>
+        .breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
 
 .row {
     display: -ms-flexbox;
@@ -68,7 +79,7 @@ overflow-x: hidden;
                     <li><a href="../At_a_glance/Climate.html">Climate</a></li>
                 </ul>
             </li>
-            <li class="nav_item"><a href="../New/New_in_suzhou.html">NEW IN SUZHOU</a>
+            <li class="nav_item"><a href="../New/New_in_Wuxi.html">NEW IN SUZHOU</a>
                 <ul class="submenu">
                     <li><a href="../New/The_Lates.html">The lates</a></li>
                     <li><a href="../New/Important updates.html">Important updates</a></li>
@@ -129,46 +140,17 @@ overflow-x: hidden;
 
 
 <!-----start-about---->
-<div id="about" class="about">
-    <div class="container">
-        <div class="col-md-5 about-left">
-            <p style="color: #70655c;
-            font-family: 'Kaushan Script', cursive;
-            font-size: 3.438em;
-            line-height: 58px;
-            margin-top: 50px;
-            text-align: center;
-            margin-top:100px;">ATTRACTIONS</p>
-        </div>
-        <div class="col-md-7 about-right">
-            <h3>Wuxi is located on the shore of Taihu Lake, with beautiful scenery and a long history of thousands of years. It is known as the "Pearl of Taihu Lake" for its beautiful and numerous cultural landscapes. Wuxi has a lot of beautiful scenery. How many of them have you been to?</h3>
-            <ul class="list-unstyled list-inline">
-                <li>1.  Li Garden</li>
-            </br>
-                <li>2.  Turtle Head Isle</li>
-            </br>
-                <li>3.  The scenic spot of Lingshan Mountain</li>
-            </br>
-                <li>4.  Xihui Park</li>
-            </br>
-                <li>5.  Water Margin Film City</li>
-            </br>
-                <li>6.  Huishan ancient town</li>
-            </br>
-            </ul>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-</div>
-<!-----//End-about---->
+
 <!----start-gallery---->
+<h3 style="color: #70655c;
+font-family: 'Kaushan Script', cursive;
+font-size: 3.438em;
+line-height: 58px;
+margin-top: 50px;
+text-align: center;
+margin-top:100px;">ATTRACTIONS</h3>
 <div id="gal" class="gallery" >
     <div class="container">
-        <div class="head">
-            <h3>top 6 attraction</h3>
-            <span style="margin: auto;"> </span>
-        </div>
-        
         <div class="gallery-grids">
             <div class="gallery-grids-row1">
                 <div class="col-md-8 gallery-grid1">
@@ -177,7 +159,7 @@ overflow-x: hidden;
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
                                 <span> Li Garden</span>
-                                <button>View detail</button>
+                                <button onclick="window.location.href = 'Attraction_LiGarden.html'">View detail</button>
                                 <label> <i class="fa fa-heart" id="heart0" onclick="add1(this.id)"> </i></label>
                             </h2>
                         </div>
@@ -188,8 +170,8 @@ overflow-x: hidden;
                         <img class="port-pic" src="../image/explore_yuantouzhu.jpg" />
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
-                                <span> Turtle Head Isle</span>
-                                <button>View detail</button>
+                                <span>Taihu Lake</span>
+                                <button onclick="window.location.href = 'Attraction_TaihuLake.html'">View detail</button>
                                 <label> <i class="fa fa-heart" id="heart1" onclick="add1(this.id)"> </i></label>
                             </h2>
                         </div>
@@ -205,7 +187,7 @@ overflow-x: hidden;
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
                                 <span>Lingshan Mountain</span>
-                                <button>View detail</button>
+                                <button onclick="window.location.href = 'Attraction_Lingshan.html'">View detail</button>
                                 <label> <i class="fa fa-heart" id="heart2" onclick="add1(this.id)"> </i></label>
                             </h2>
                         </div>
@@ -217,7 +199,7 @@ overflow-x: hidden;
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
                                 <span> Xihui Park</span>
-                                <button>View detail</button>
+                                <button onclick="window.location.href = 'Attraction_XihuiGarden.html'">View detail</button>
                                 <label> <i class="fa fa-heart" id="heart3" onclick="add1(this.id)"> </i></label>
                             </h2>
                         </div>
@@ -234,7 +216,7 @@ overflow-x: hidden;
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
                                 <span>Water Margin Film City</span>
-                                <button>View detail</button>
+                                <button onclick="window.location.href = 'Attraction_Threekingdoms.html'">View detail</button>
                                 <label> <i class="fa fa-heart" id="heart4" onclick="add1(this.id)" ></i></label>
                             </h2>
                         </div>
@@ -246,7 +228,7 @@ overflow-x: hidden;
                         <div class="b-wrapper">
                             <h2 class="b-animate b-from-left    b-delay03 ">
                                 <span> Huishan ancient town</span>
-                                <button>View detail</button>
+                                <button onclick="window.location.href = 'Attraction_HuishanAncientTown.html'">View detail</button>
                                 <label  > <i class="fa fa-heart" id="heart5" onclick="add1(this.id)" ></i></label>
                             </h2>id
                         </div>
